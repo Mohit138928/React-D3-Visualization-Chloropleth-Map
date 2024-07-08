@@ -1,38 +1,105 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body{
+    min-height: 100%
+}
+
+body {
+  background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FDF1E7;
+    margin: none;
+}
+
+svg{
+  background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#canvas{
+    min-height: 600px;
+    min-width: 950px;
+}
+
+
+.county:hover{
+    fill: black
+}
+
+g{
+    color: #FDF1E7
+}
+
+#tooltip{
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    color: #FDF1E7;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#legend{
+    color: rgb(56, 58, 74);
+    font-size: 18px;
+    text-align: center;
+    min-height: 150px;
+    max-width: 180px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+#title{
+    font-size: 28px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#description{
+    color: black;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.footer {
+  width: 450px;
   text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
 }
